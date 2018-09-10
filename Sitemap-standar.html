@@ -26,7 +26,7 @@ body{font-family:'Open Sans',sans-serif;background: #fff;}
 #feed-nav a,#feed-nav span{border:1px solid #dedede;border-radius:5px;padding:0;color:#757575;text-decoration:none;display:block;height:30px;line-height:32px}
 #feed-nav a,#feed-nav span:hover{color:#1B1B1B}
 #feed-nav a:active,#feed-nav a:hover{color:#555}
-#feed-nav span{cursor:wait}
+#feed-nav span{cursor:wait}.none{display:none}
 @media (max-width:600px){#table-outer table{margin:0 auto;width:100%}
 #feed-container,#table-outer{margin:0 auto}
 #feed-container li .inner{margin:5px auto;height:auto}
@@ -42,8 +42,9 @@ body{font-family:'Open Sans',sans-serif;background: #fff;}
 </style>
 <div id="table-outer">
 <table><tbody>
+<tr><td><label for="feed-order" disabled="none"></label></td> <td><div class="none"><select id="feed-order"> <option></option> </select></div></td></tr>
 <tr><td><label for="label-sorter">Filter artikel berdasarkan kategori:</label></td> <td><select disabled="" id="label-sorter"> <option selected="">Loading....</option> </select></td></tr>
-<tr>                 <td><label for="feed-q">Cari artikel dengan kata kunci:</label></td> <td><form id="post-searcher">
+<tr><td><label for="feed-q">Cari artikel dengan kata kunci:</label></td> <td><form id="post-searcher">
 <input id="feed-q" type="text" placeholder="Ketik dan tekan ENTER"/>
 </form>
 </td></tr>
